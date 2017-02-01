@@ -1,8 +1,16 @@
 /*var WINDOW_WIDTH = 1200;
 var WINDOW_HEIGHT = 800;*/
 var RADIUS = 8;
-var times = new Date();
-// var endtime = times.setTime(times.getTime()+3600*1000);
+var startimes = new Date(2017, 1, 3);
+var startime = parseInt(startimes.getTime() / 1000);
+
+var endtimes = new Date();
+var endtime = parseInt(endtimes.setTime(endtimes.getTime() + 3600 * 1000) / 1000);
+
+var endtimes = new Date();
+var endtime = parseInt(endtimes.setTime(endtimes.getTime() + 3600 * 1000) / 1000);
+var abc = startime - endtime;
+console.log(abc);
 
 var curShowTimeSeconds = 0;
 var balls = [];
@@ -38,8 +46,14 @@ window.onload = function(argument) {
 }
 
 function getCurrentShowTimeSeconds() {
-	var curTime = new Date();
-	var ret = curTime.getHours() * 3600 + curTime.getMinutes() * 60 + curTime.getSeconds();
+	/*	var curTime = new Date();
+		var ret = curTime.getHours() * 3600 + curTime.getMinutes() * 60 + curTime.getSeconds();
+		return ret;*/
+
+	var startimes = new Date();
+	var startime = parseInt(startimes.getTime() / 1000);
+
+	var ret = endtime - startime;
 	return ret;
 }
 
