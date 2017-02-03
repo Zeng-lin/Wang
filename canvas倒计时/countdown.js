@@ -1,16 +1,9 @@
 /*var WINDOW_WIDTH = 1200;
 var WINDOW_HEIGHT = 800;*/
 var RADIUS = 8;
-var startimes = new Date(2017, 1, 3);
-var startime = parseInt(startimes.getTime() / 1000);
-
 var endtimes = new Date();
 var endtime = parseInt(endtimes.setTime(endtimes.getTime() + 3600 * 1000) / 1000);
 
-var endtimes = new Date();
-var endtime = parseInt(endtimes.setTime(endtimes.getTime() + 3600 * 1000) / 1000);
-var abc = startime - endtime;
-console.log(abc);
 
 var curShowTimeSeconds = 0;
 var balls = [];
