@@ -126,7 +126,13 @@
 <div id="mask"></div>
  
 <script type="text/javascript">
+
+
 $(document).ready(function() {
+  var a = window.innerWidth;
+  var b = window.outerWidth;
+  console.log(a);
+  console.log(b);
   showsidebar();
   GoTop();
   showsome();
@@ -163,7 +169,6 @@ function GoTop() {
 }
 
 function showsidebar() {
-
   var show = $("#show");
   var sidebar = $("#sidebar");
   var oUl = $("#sidebar ul")[0];
@@ -184,7 +189,6 @@ function showsidebar() {
       right: "-300px"
     }, 300);
     $("#mask").css("display", "none")
-
   })
 }
 </script>
