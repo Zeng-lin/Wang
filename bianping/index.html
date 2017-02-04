@@ -199,10 +199,6 @@
 
 
 $(document).ready(function() {
-  var a = window.innerWidth;
-  var b = window.outerWidth;
-  console.log(a);
-  console.log(b);
   showsidebar();
   GoTop();
   showsome();
@@ -217,16 +213,16 @@ function showsome() {
       $("#nav").animate({
         top: 0
       }, 30);
-      $("#gotop").css("display", "block")
     } else if( scrollTop == 0){
       $("#nav").animate({
         top: 0
       }, 30);
+      $("#gotop").css("display", "none")
     }else {
       $("#nav").animate({
         top: "-30px"
       }, 30);
-      $("#gotop").css("display", "none")
+      $("#gotop").css("display", "block")
     }
 }
 
